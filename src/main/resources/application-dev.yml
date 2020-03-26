@@ -1,0 +1,24 @@
+#开发环境
+server:
+  port: 8080
+  servlet:
+    context-path: /springboot2
+
+
+#数据库连接池
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mydatabase?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: zqf0529630
+    #性能调优
+    #hikari.....
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+#项目常量
+user-entity:
+  name: 蝙蝠
+  age: 18

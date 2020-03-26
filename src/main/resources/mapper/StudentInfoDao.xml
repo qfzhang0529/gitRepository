@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hr.springboot2.dao.StudentInfoMapper">
+
+    <resultMap type="com.hr.springboot2.entity.StudentInfo" id="StudentInfoMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="lastName" column="last_name" jdbcType="VARCHAR"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="findStu" resultMap="StudentInfoMap">
+        select * from student_info
+    </select>
+
+</mapper>

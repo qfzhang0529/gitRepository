@@ -1,0 +1,16 @@
+#数据库连接池
+spring:
+  profiles:
+    #配置文件
+    active: dev
+#  mvc:
+#    view:
+#      prefix: /WEB-INF/
+#      suffix: .jsp
+  freemarker:
+    charset: utf-8
+    template-loader-path: classpath:/templates
+    suffix: .ftl
+    content-type: text/html;charset=utf-8
+    #关闭缓存，及时更新，正式环境需要将缓存开启 true
+    cache: false
